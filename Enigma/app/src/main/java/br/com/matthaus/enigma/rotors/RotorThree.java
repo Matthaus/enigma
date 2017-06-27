@@ -9,8 +9,8 @@ public class RotorThree extends DefaultRotor {
             'V', 'Z', 'N', 'Y', 'E', 'I', 'W', 'G', 'A', 'K', 'M', 'U', 'S', 'Q', 'O' };
 
     public RotorThree() {
-        this.setInput(INPUT);
-        this.setOutput(OUTPUT);
+        this.setReference(INPUT);
+        this.setConversion(OUTPUT);
     }
 
 }

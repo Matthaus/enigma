@@ -11,8 +11,8 @@ public class ReflectorB extends DefaultRotor {
             'G', 'O', 'K', 'M', 'I', 'E', 'B', 'F', 'Z', 'C', 'W', 'V', 'J', 'A', 'T', };
 
     public ReflectorB() {
-        this.setInput(INPUT);
-        this.setOutput(OUTPUT);
+        this.setReference(INPUT);
+        this.setConversion(OUTPUT);
     }
 
 }

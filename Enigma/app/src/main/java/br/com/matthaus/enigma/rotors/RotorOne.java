@@ -9,8 +9,8 @@ public class RotorOne extends DefaultRotor {
             'T', 'O', 'W', 'Y', 'H', 'X', 'U', 'S', 'P', 'A', 'I', 'B', 'R', 'C', 'J'};
 
     public RotorOne() {
-        this.setInput(INPUT);
-        this.setOutput(OUTPUT);
+        this.setReference(INPUT);
+        this.setConversion(OUTPUT);
     }
 
 }

@@ -9,8 +9,8 @@ public class RotorTwo extends DefaultRotor {
             'H', 'W', 'T', 'M', 'C', 'Q', 'G', 'Z', 'N', 'P', 'Y', 'F', 'V', 'O', 'E'};
 
     public RotorTwo() {
-        this.setInput(INPUT);
-        this.setOutput(OUTPUT);
+        this.setReference(INPUT);
+        this.setConversion(OUTPUT);
     }
 
 }
