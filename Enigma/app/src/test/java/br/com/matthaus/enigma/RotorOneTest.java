@@ -17,12 +17,10 @@ public class RotorOneTest {
             }
         });
 
-        while (controle < 95) {
-            m3Machine.processInput('A');
-            controle++;
-        }
+//        m3Machine.processBatchInput("Researchers are still investigating the software behind the attack, warning that it's more sophisticated than the WannaCry worm that struck hundreds of thousands of computers across the globe last month.\n" +
+//                "\"WannaCry was a tremendous failure. It was a lot of noise, very little money, and everyone noticed it,\" said Craig Williams, an expert at cybersecurity firm Cisco Talos. \"What we're seeing today is a much more intelligent worm.\"");
 
-        m3Machine.processInput('A');
+//        m3Machine.processBatchInput("JFDDGHTWGJUWHNRCUQPTLFXBEZRXUAQZZDTOYQWVIYHDXDPXJHRXEXMXIRXRHXOMPWLXMJXTOTJTHTSGBMJMECJVWAFYGVDIBVIBYGHVTBGJRXEZDAWKBUZMQAZYUQVDOUSLEDWACVTBAQCGRGQRLZNVUAKDWWYTIQMFJNFJRHTZWZDMXYPEQROCGPAQEBCZVBYOSMISOGUEMJCNJCMWKVQWCYPRHSDOMTIMCTGMHCJDOHRXTTGLEDPSOSCBEOGOWWELAZRMZQLXJZOTWTUPHRDNIIDGADXULCKXSLEMNXSNUHZKVHERBTSEVXMOGIYSSHRFYWZCEPRAZGXAPJCIRAABEBRVYQ");
 
     }
 

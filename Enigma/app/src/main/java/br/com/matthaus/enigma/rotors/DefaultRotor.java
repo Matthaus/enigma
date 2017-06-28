@@ -2,8 +2,12 @@ package br.com.matthaus.enigma.rotors;
 
 public class DefaultRotor {
 
-    private char[] reference, conversion;
-    private RotorOnWorkedListener listener;
+    protected char[] reference, conversion;
+    protected RotorOnWorkedListener listener;
+
+    public void process(char letter) {
+        this.process(letter, 0);
+    }
 
     public void process(char letter, int offset) {
         int inputIndex = indexInRotor(reference, letter);
@@ -19,8 +23,6 @@ public class DefaultRotor {
         int shiftedIndex = adjustIndex(outputIndex - offset);
         char shiftedChar = reference[shiftedIndex];
         shiftedIndex = indexInRotor(conversion, shiftedChar);
-        shiftedIndex += offset;
-        shiftedIndex = adjustIndex(shiftedIndex);
         listener.onPropagated(reference[shiftedIndex], this);
     }
 
@@ -36,7 +38,7 @@ public class DefaultRotor {
         this.listener = listener;
     }
 
-    private int indexInRotor(char[] side, char letter) {
+    protected int indexInRotor(char[] side, char letter) {
         for (int i = 0; i < 26; i++) {
             if (side[i] == letter)
                 return i;
@@ -44,7 +46,7 @@ public class DefaultRotor {
         return -1;
     }
 
-    private int adjustIndex(int index) {
+    protected int adjustIndex(int index) {
         if (index >= reference.length) {
             return index - reference.length;
         } else if (index < 0) {
